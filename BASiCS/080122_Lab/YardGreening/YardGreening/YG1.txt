@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: YardGreening, Configuration: Debug Any CPU ------
+1>YardGreening -> C:\Users\User\source\repos\080122\YardGreening\YardGreening\bin\Debug\net5.0\YardGreening.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -6,7 +6,11 @@ namespace P07._Concat_Names
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string nameOne = Console.ReadLine();
+            string nameTwo = Console.ReadLine();
+            string delimiter = Console.ReadLine();
+
+            Console.WriteLine($"{nameOne}{delimiter}{nameTwo}");
         }
     }
 }

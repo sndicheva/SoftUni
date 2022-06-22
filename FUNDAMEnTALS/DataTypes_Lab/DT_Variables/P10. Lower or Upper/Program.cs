@@ -6,9 +6,9 @@ namespace P10._Lower_or_Upper
     {
         static void Main(string[] args)
         {
-            char  ch = char.Parse(Console.ReadLine());
+            char ch = char.Parse(Console.ReadLine());
 
-            if (Char.IsUpper(ch))
+            if (char.IsUpper(ch))
             {
                 Console.WriteLine("upper-case");
             }

@@ -6,7 +6,11 @@ namespace P06._Reversed_Chars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char symbolOne = char.Parse(Console.ReadLine());
+            char symbolTwo = char.Parse(Console.ReadLine());
+            char symbolTree = char.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{symbolTree} {symbolTwo} {symbolOne}");
         }
     }
 }

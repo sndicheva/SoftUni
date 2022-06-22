@@ -6,7 +6,11 @@ namespace P09._Chars_to_String
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char charOne = char.Parse(Console.ReadLine());
+            char charTwo = char.Parse(Console.ReadLine());
+            char charTree = char.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{charOne}{charTwo}{charTree}");
         }
     }
 }

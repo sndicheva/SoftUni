@@ -6,22 +6,22 @@ namespace P12._Refactor_Special_Numbers
     {
         static void Main(string[] args)
         {
-            int input = int.Parse(Console.ReadLine());
+            int count = int.Parse(Console.ReadLine());
             int sum = 0;
-            int currentNum = 0;
+            int number = 0;
             bool isSpecial = false;
-            for (int i = 1; i <= input; i++)
+            for (int ch = 1; ch <= count; ch++)
             {
-                currentNum = i;
-                while (i > 0)
+                number = ch;
+                while (ch > 0)
                 {
-                    sum += i % 10;
-                    i = i / 10;
+                    sum += ch % 10;
+                    ch = ch / 10;
                 }
                 isSpecial = (sum == 5) || (sum == 7) || (sum == 11);
-                Console.WriteLine("{0} -> {1}", currentNum, isSpecial);
+                Console.WriteLine("{0} -> {1}", number, isSpecial);
                 sum = 0;
-                i = currentNum;
+                ch = number;
             }
 
         }

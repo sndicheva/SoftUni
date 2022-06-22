@@ -8,10 +8,11 @@ namespace P02._Pounds_to_Dollars
         {
             double pounds = double.Parse(Console.ReadLine());
 
-            double poundsToUsdRate = 1.31;
-            double result = pounds * poundsToUsdRate;
+            double usdRate = 1.31;
 
-            Console.WriteLine($"{result:f3}");
+            double poundsToUsd = pounds * usdRate;
+
+            Console.WriteLine($"{poundsToUsd:f3}");
         }
     }
 }

@@ -1,0 +1,67 @@
+02. The Squirrel
+ 
+An intern from a big company must solve the game - "The squirrel". He doesn’t have enough experience, so he needs your help.
+Here are the rules of the game:
+The game starts with 0 collected hazelnuts. Your goal is to collect all of them.
+You get as input the size of the field, which will be always a square shape. After that, you will receive the directions in which the squirrel can move – "left", "right", "down", and "up" in a sequence, each value separated by a comma and a space (", "). On the next rows, you will receive the field.
+Possible characters in the field:
+•	s - represents the squirrel's position.
+•	h – represents a hazelnut. 
+•	* – the asterisk represents an empty position.
+•	t – represents a trap.
+The squirrel starts from the s - position.
+•	If the squirrel steps on a hazelnut, you have to increase them by 1. You have to track the number of hazelnuts because you may need them. The field should be marked with an asterisk (*).
+o	If the squirrel collects all 3 hazelnuts, the game ends and the squirrel stays in its last position.
+•	Asterisk ("*") does nothing, so nothing happens if the squirrel steps on it.
+•	If it steps on a trap, the game ends and the squirrel disappears from the screen.
+•	If the squirrel moves out of the field, the game ends and disappears from the screen.
+After all commands you will have 4 possible results:
+•	You win if the squirrel collects all of the hazelnuts.
+•	The squirrel has collected less than 3 hazelnuts.
+•	The squirrel steps on a trap.
+•	The squirrel moves out of the field.
+Input
+•	On the first line, you will receive the length of the field – an integer number in the range [3, 5].
+•	On the second line, you will receive the commands to move the squirrel – an array of strings separated by ", ".
+•	In the next N lines, you will receive the values for every row.
+Output
+•	On the first line:
+o	If the squirrel goes out of the field - "The squirrel is out of the field.".
+o	If the squirrel steps on a trap - "Unfortunately, the squirrel stepped on a trap...".
+o	If the squirrel hasn’t collected all hazelnuts - "There are more hazelnuts to collect.".
+o	If the squirrel has collected all hazelnuts - "Good job! You have collected all hazelnuts!".
+•	On the second line, print the number of collected hazelnuts - "Hazelnuts collected: {hazelnuts_count}"
+Constraints
+•	The size of the field will be between [3,5].
+•	There could be one or no trap on the field.
+•	There will always be 3 hazelnuts on the field.
+
+
+
+Examples
+Input	Output	Comments
+5
+left, left, up, right, up, up
+**h**
+t****
+*h***
+*h*s*
+*****	Good job! You have collected all hazelnuts!
+Hazelnuts collected: 3
+	The squirrel moves 2 times to the left and collects its first hazelnut. After that collect the second one. Finally, with the last "up" command, the squirrel collects its final hazelnut.
+4
+down, down, right, right
+*s*h
+***h
+***t
+h***
+	Unfortunately, the squirrel stepped on a trap...
+Hazelnuts collected: 0	
+4
+down, down, right, right
+h***
+***h
+*s*t
+**h*	The squirrel is out of the field.
+Hazelnuts collected: 0	
+
